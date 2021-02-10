@@ -53,7 +53,7 @@ Project is: _in progress_
 
 ## Inspiration
 
-from `Watch and Code`
+
 
 ## Contact
 By [samir] 
