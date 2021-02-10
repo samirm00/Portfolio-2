@@ -1,4 +1,3 @@
-import {createListHandler} from '../handlers/create-list.js';
+import {} from '../handlers/create-list.js';
 
-document.getElementById('list-name-input')
-.addEventListener('keyup', createListHandler);
+document.getElementById('list-name-input').addEventListener('keyup', createListHandler);
