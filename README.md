@@ -17,7 +17,7 @@
 
 
 ## Screenshots
-![Example screenshot](public/assests/screenShot.png)
+![Example screenshot]()
 
 ## Technologies
 * JavaScript
