@@ -14,13 +14,13 @@
 
 ## User Story Dependencies
 
-![Story Dependency Diagram](../public/assests/storiesDependency.png)
+![Story Dependency Diagram]()
 
 ---
 
 ## WIREFRAME
 
-## ![wireframe](../public/assests/wireFrame.png)
+## ![wireframe]()
 
 ## 0.Setup
 
