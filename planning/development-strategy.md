@@ -136,7 +136,7 @@
 
 ## 4. work section 
 
-**As a user I want to see some works of the portfolio owner **
+**As a user I want to see some works of the portfolio owner**
 
 - **When I open the website , I see:**
 
