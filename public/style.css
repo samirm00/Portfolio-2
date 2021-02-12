@@ -120,8 +120,7 @@ section{
     color: thistle;
     font-size: 20px;
     margin-top: 20px;
-    padding: 12px 32px;
-    margin-left:  px;
+    padding: 12px 32px;    
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
@@ -438,12 +437,10 @@ footer{
     position: fixed;
     top: 100px;
     left: -100%;
-    display: block;
-    padding: 
-    text-align: center;
-    
+    display: block;   
+    text-align: center;    
     background: #fff;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
     z-index: 999;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
