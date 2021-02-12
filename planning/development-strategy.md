@@ -10,7 +10,7 @@
 > - what types?
 > - what are array entries like?
 
-#### Data are an object contains {id , name , url } of the project on GitHub
+#### Data are an object contains {id , name , url } of the projects on GitHub
 ---
 
 ## User Story Dependencies
