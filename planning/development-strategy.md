@@ -35,7 +35,7 @@
 
 ## 1. home section 
 
-**As a user I want to see the portfolio**
+**As a user I want to see the portfolio owner website**
 
 - **When I open the website , I see:**
 
@@ -208,7 +208,7 @@
 
 ## 5. contact section 
 
-**As a user I want to contact  the portfolio owner offer**
+**As a user I want to contact  the portfolio owner**
 
 - **When I open the website , I see:**
 
