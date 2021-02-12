@@ -179,3 +179,47 @@ head h2{
 img{
     max-width: 100%;
 }
+
+/*Service section */
+
+.services{
+    background:#111;
+}
+.head .white {
+   color:#fff; 
+}
+
+.services .text-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services .text-content .servicesBox{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s ease;
+}
+.services .text-content .servicesBox:hover{
+    background:#2196f3 ;
+
+}
+
+.services .text-content .servicesBox img{
+    max-width: 80px;
+    filter: invert(1);
+}
+.services .text-content .servicesBox h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.services .text-content .servicesBox p {
+    font-size: 16px;
+    margin: 5px;
+}
+
