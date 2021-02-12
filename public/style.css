@@ -83,7 +83,7 @@ section{
 .first-ban{
     position: relative;
     min-height: 100vh;
-    background: url(https://images.pexels.com/photos/230659/pexels-photo-230659.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background: url('./assests/pexels-photo-230659.jpeg');
     background-size: cover;
     background-position: right;
     display: flex;

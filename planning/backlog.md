@@ -6,13 +6,14 @@ A collection of user stories you can choose from. Stories inside of each priorit
 
 > these are necessary for basic usability
 
-- [ ] - _acceptance criteria ..._
-- [ ]
-  - _acceptance criteria ..._
-- [ ]
-  - _acceptance criteria ..._
-- [ ] - _acceptance criteria ..._
-- [ ] - _acceptance criteria ..._
+- [x] A user be able to see  home page 
+- [x] A user be able to see information about me 
+- [x] A user be able to see  services 
+- [x] A user be able to see my work
+- [x] A user be able to contact me 
+
+
+
 
 ## Should-Haves
 
