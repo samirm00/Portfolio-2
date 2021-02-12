@@ -1,1 +1,132 @@
+/*General styles*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
 
+
+/* Header */
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 900;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+header .sticky{
+    background-color: rgb(255, 255, 255);
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+header .logo{
+    color: rgb(133, 212, 164);
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+header .sticky .logo {
+    color: #111;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+    color: rgb(47, 165, 57);
+    text-decoration: none;
+    font-weight: 600;
+
+}
+header ul li a:hover{
+    color: rgb(78, 85, 104);
+}
+
+header .sticky ul li a {
+    color:#111 ;
+    margin-bottom: 20px;
+}
+
+/*Home section */
+
+section{
+    padding: 150px; 
+      
+}
+.first-ban{
+    position: relative;
+    min-height: 100vh;
+    background: url(https://images.pexels.com/photos/230659/pexels-photo-230659.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items:center;
+    justify-content: start;
+    }
+.first-ban h2{
+    font-size: 2em;
+    color: rgb(170, 60, 60);
+    font-weight: 400;
+    line-height: 1.8em;   
+
+}
+
+.first-ban h2 span {
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Potta One', cursive;
+
+}
+
+.first-ban h3 {
+    font-size: 3em;
+    color: rgb(103, 212, 14);
+    font-weight: 700;
+    line-height: 1.8em;
+    font-family: fantasy;
+}
+
+.btn{
+    position: relative;
+    background-color: #27998a;
+    display: inline-block;
+    color: thistle;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 12px 32px;
+    margin-left:  px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing:2.5px ;
+}
+.btn:hover{
+    background-color: #0b4da5;
+}
