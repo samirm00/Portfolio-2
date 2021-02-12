@@ -257,3 +257,296 @@ img{
     font-family: 'Potta One', cursive;
     color: #27998a;
 }
+
+/* contact section */
+
+.contact{
+    background:#111;
+}
+.display-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.formBx{
+   min-width: 60%;  
+}
+
+.formBx form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.formBx form h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contactInfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+.formBx form input,
+.formBx form input textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    
+}
+
+.formBx form textarea{
+    min-height: 200px;
+    min-width: 50%;
+    background: transparent;
+    resize: none;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+} 
+
+.formBx form input[type="submit"]{
+   max-width: 100px;
+   background: #2196f3;
+   cursor: pointer; 
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+.contactInfo{
+    min-width: 40px;
+
+}
+.contactBox{
+  position: relative;  
+}
+
+.contactBox .box {
+    position: relative;
+    padding: 20px 0px;
+    display: flex;
+}
+
+.contactBox .box .icon{
+   min-width: 40px;
+   padding-top: 4px;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   font-size: 24px;
+   margin-bottom: 10px;
+
+}
+.contactBox .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+
+}
+
+.contactBox .box .text  h3{
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 10px;
+
+}
+
+.text-important{    
+    font-family: 'Potta One', cursive;   
+}
+
+/* Footer  */
+
+footer{
+    background-color:rgb(53, 48, 48);     
+    padding: 10px;  
+
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container p{
+    font-family: fantasy;
+    color: rgb(231, 240, 237);
+    font-weight: 200;
+    
+
+}
+
+.soical-networks a {   
+    padding: 5px 40px;
+    color:#fff;
+}  
+
+.soical-networks a:hover {
+    color: #1d1f1e;
+} 
+
+/*media query */
+
+
+@media(max-with:900px){
+    header,
+    header.sticky{
+        padding: 20px 50px;
+        z-index: 1000;
+
+
+}
+.nav-bar{
+    position: fixed;
+    top: 100px;
+    left: -100%;
+    display: block;
+    padding: 
+    text-align: center;
+    
+    background: #fff;
+    transition: 0.5 ease;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header ul li a {
+    color: #111;
+    font-size: 15px;
+    margin: 3px;
+}
+
+.toggle{
+    height: 40px;
+    width: 40px;
+    background: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px ;
+    cursor: pointer;
+
+}
+
+.toggle.active{
+    background: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px ;
+    cursor: pointer;
+ 
+}
+
+header.sticky .toggle{
+    filter: invert(1);
+}
+section {
+    padding: 100px 50px ;
+
+}
+
+.first-ban{
+    padding:150px 50px 100px ;
+
+}
+
+.first-ban h2 {
+    font-size: 1.5em;
+}
+
+.first-ban h3 {
+    font-size: 1em;
+}
+
+.btn{
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.head h2{    
+    font-size: 24px;
+
+}
+
+.text-content h3{
+    font-size: 20px;
+
+}
+.text-content {
+    flex-direction: column;
+}
+.text-second{
+    min-width: 50%;
+    margin-bottom: 20px;
+}
+
+.services .text-content .servicesBox{
+    margin: 10px;
+}
+
+.work .text-content .workBox{
+    width: 100%;
+    padding: 10px;
+}
+.display-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+   }
+}
+
+
+
+@media(max-width:600px){
+    header,
+    header .sticky {
+        padding: 20px 20px;
+    }
+    header .logo{
+        color: rgb(111, 104, 141);
+    }
+
+    .first-ban{
+        padding:150px 20px 100px ;
+    
+    }
+
+    .nav-bar{ 
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    margin-top: 10px;
+    }  
+    
+    header ul li a {
+    padding-top: 5px;
+    color: rgb(111, 104, 141);
+    }
+
+    section {
+    padding: 100px 20px;        
+    }
+
+    .display-content {
+     display: flex;
+     flex-direction: column;
+    }
+}
+  
