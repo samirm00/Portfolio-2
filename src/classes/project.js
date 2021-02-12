@@ -4,11 +4,11 @@
 
 export class Project  {
    
-    constructor(id , name , link ){
+    constructor(id , name , html_url ){
 
         this.id = id ;
         this.name = name;
-        this.link = link;                
+        this.link = html_url;                
     } 
 
     render(){
@@ -51,8 +51,9 @@ export class Project  {
 
         const projectLink = document.createElement('a');
         projectLink.classList.add('project-link');
-
+        projectLink.innerHTML = `${this.name} <i class="fas fa-paperclip"></i>`;
         projectLink.href = `${this.link}`;
+        projectLink.target = '_balnk';
 
         // append to the to description DIV
 

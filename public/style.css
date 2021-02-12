@@ -233,7 +233,9 @@ img{
 /*DOM elements */
 .parent-div{
     display: flex;
-    justify-content: center;    
+    justify-content: center; 
+    flex-direction: column;  
+    align-items: center; 
     flex-wrap: wrap;
 }
 
@@ -256,6 +258,27 @@ img{
     text-transform: uppercase;
     font-family: 'Potta One', cursive;
     color: #27998a;
+}
+.description-div{
+    background: rgb(99, 106, 107);
+    border: 40px;
+}
+
+.project-link{
+    color: rgb(231, 222, 236);
+    margin: 10px;
+    text-decoration: none;
+    font-family: fantasy;
+    font-weight: 700;
+}
+
+.project-link:hover{
+    color: rgb(62, 231, 93);
+    cursor: pointer;
+}
+
+.project-link  .fa-paperclip{
+    color: rgb(177, 238, 190);
 }
 
 /* contact section */
@@ -550,3 +573,5 @@ section {
     }
 }
   
+
+

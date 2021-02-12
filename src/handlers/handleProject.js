@@ -21,7 +21,7 @@ export function handleProject(){
      return ;
     }
 
-     project = new Project(element.id, element.name, element.homepage) ;    
+     project = new Project(element.id, element.name, element.html_url) ;    
     const renderProject = project.render();
 
     const projectsDiv = document.getElementById('projects');
