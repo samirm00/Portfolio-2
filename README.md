@@ -1,130 +1,119 @@
 # Portfolio
 
-> A personal portfolio to introduce the world and let them know more about me and my work. 
+> A personal portfolio to introduce the world and let them know more about me and my work.
 
 ## Table of contents
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+
+- [General info](#general-info)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Features](#features)
+- [Status](#status)
+- [Inspiration](#inspiration)
+- [Contact](#contact)
 
 ## General info
 
 A personal portfolio includes all the inforamtion about my work , contact information.
 
-
 ## Screenshots
+
 ![Example screenshot](public/assests/screenShot.png)
 
 ## Technologies
-* JavaScript
-* HTML
-* CSS
-* VSC code
 
+- JavaScript
+- HTML
+- CSS
+- VSC code
 
 ## Setup
-
 
 ## Code Examples
 
 ```js
+"use strict";
 
-'use strict';
+export class Project {
+  constructor(id, name, link) {
+    this.id = id;
+    this.name = name;
+    this.link = link;
+  }
 
+  render() {
+    const parentDiv = document.createElement("div");
+    parentDiv.classList.add("parent-div");
 
-export class Project  {
-   
-    constructor(id , name , link ){
+    const parentImg = document.createElement("div");
+    parentImg.classList.add("parent-img");
 
-        this.id = id ;
-        this.name = name;
-        this.link = link;                
-    } 
+    // append to the parent Div
 
-    render(){
-        const parentDiv = document.createElement('div');
-        parentDiv.classList.add('parent-div');
+    parentDiv.appendChild(parentImg);
 
-        const parentImg = document.createElement('div');
-        parentImg.classList.add('parent-img');
+    const image = document.createElement("img");
+    image.src = `./public/assests/${this.id}.png`;
+    image.className = "images";
 
-        // append to the parent Div
+    // append the img to the parent img DIV
 
-        parentDiv.appendChild(parentImg);
+    parentImg.appendChild(image);
 
-        const image = document.createElement('img');
-        image.src = `./public/assests/${this.id}.png`;
-        image.className = 'images';
+    const projectTitle = document.createElement("h3");
+    projectTitle.classList.add("project-title");
+    projectTitle.innerText = `${this.name}`;
 
-        // append the img to the parent img DIV
-        
-        parentImg.appendChild(image);
+    // append to the image parent DIV
 
+    parentImg.appendChild(projectTitle);
 
-        const projectTitle = document.createElement('h3');
-        projectTitle.classList.add('project-title');
-        projectTitle.innerText = `${this.name}`;
+    const descriptionDiv = document.createElement("div");
+    descriptionDiv.classList.add("description-div");
 
-        // append to the image parent DIV
+    const textDiv = document.createElement("div");
+    textDiv.classList.add("text-div");
 
-        parentImg.appendChild(projectTitle);
+    // append to description DIV
+    descriptionDiv.appendChild(textDiv);
 
-        const descriptionDiv = document.createElement('div');
-        descriptionDiv.classList.add('description-div');
-       
+    const projectLink = document.createElement("a");
+    projectLink.classList.add("project-link");
 
-        const textDiv = document.createElement('div');
-        textDiv.classList.add('text-div');
+    projectLink.href = `${this.link}`;
 
-        // append to description DIV
-        descriptionDiv.appendChild(textDiv);
+    // append to the to description DIV
 
-        const projectLink = document.createElement('a');
-        projectLink.classList.add('project-link');
+    descriptionDiv.appendChild(projectLink);
 
-        projectLink.href = `${this.link}`;
+    // append to the parent DIV
+    parentDiv.appendChild(descriptionDiv);
 
-        // append to the to description DIV
-
-        descriptionDiv.appendChild(projectLink);
-
-         
-        // append to the parent DIV
-        parentDiv.appendChild(descriptionDiv);
-
-        return parentDiv ;         
-
-    }
-
+    return parentDiv;
+  }
 }
-
-
 ```
 
-
 ## Features
+
 List of features ready and Todos for future development
 
-* 
-* 
-* 
+-
+-
+-
 
 To-do list:
 
-* 
-* 
+-
+-
 
 ## Status
+
 Project is: _in progress_
 
 ## Inspiration
 
-
-
 ## Contact
-By [samir] 
+
+By [Samir]

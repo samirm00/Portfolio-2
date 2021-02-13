@@ -1,10 +1,5 @@
-'use strict';
+"use strict";
 
+import { handleProject } from "../handlers/handleProject.js";
 
-
-
-
-import {handleProject} from '../handlers/handleProject.js';
-
-document.addEventListener('DOMContentLoaded', handleProject)
-
+document.addEventListener("DOMContentLoaded", handleProject);

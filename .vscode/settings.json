@@ -1,0 +1,14 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.iconTheme": "simple-icons",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "editor.minimap.enabled": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "window.zoomLevel": 2,
+  "editor.tokenColorCustomizations": null
+}

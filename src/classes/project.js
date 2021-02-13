@@ -1,72 +1,61 @@
+"use strict";
 
-'use strict';
+export class Project {
+  constructor(id, name, html_url) {
+    this.id = id;
+    this.name = name;
+    this.link = html_url;
+  }
 
+  render() {
+    const parentDiv = document.createElement("div");
+    parentDiv.classList.add("parent-div");
 
-export class Project  {
-   
-    constructor(id , name , html_url ){
+    const parentImg = document.createElement("div");
+    parentImg.classList.add("parent-img");
 
-        this.id = id ;
-        this.name = name;
-        this.link = html_url;                
-    } 
+    // append to the parent Div
 
-    render(){
-        const parentDiv = document.createElement('div');
-        parentDiv.classList.add('parent-div');
+    parentDiv.appendChild(parentImg);
 
-        const parentImg = document.createElement('div');
-        parentImg.classList.add('parent-img');
+    const image = document.createElement("img");
+    image.src = `./public/assests/${this.id}.png`;
+    image.className = "images";
 
-        // append to the parent Div
+    // append the img to the parent img DIV
 
-        parentDiv.appendChild(parentImg);
+    parentImg.appendChild(image);
 
-        const image = document.createElement('img');
-        image.src = `./public/assests/${this.id}.png`;
-        image.className = 'images';
+    const projectTitle = document.createElement("h3");
+    projectTitle.classList.add("project-title");
+    projectTitle.innerText = `${this.name}`;
 
-        // append the img to the parent img DIV
-        
-        parentImg.appendChild(image);
+    // append to the image parent DIV
 
+    parentImg.appendChild(projectTitle);
 
-        const projectTitle = document.createElement('h3');
-        projectTitle.classList.add('project-title');
-        projectTitle.innerText = `${this.name}`;
+    const descriptionDiv = document.createElement("div");
+    descriptionDiv.classList.add("description-div");
 
-        // append to the image parent DIV
+    const textDiv = document.createElement("div");
+    textDiv.classList.add("text-div");
 
-        parentImg.appendChild(projectTitle);
+    // append to description DIV
+    descriptionDiv.appendChild(textDiv);
 
-        const descriptionDiv = document.createElement('div');
-        descriptionDiv.classList.add('description-div');
-       
+    const projectLink = document.createElement("a");
+    projectLink.classList.add("project-link");
+    projectLink.innerHTML = `${this.name} <i class="fas fa-paperclip"></i>`;
+    projectLink.href = `${this.link}`;
+    projectLink.target = "_balnk";
 
-        const textDiv = document.createElement('div');
-        textDiv.classList.add('text-div');
+    // append to the to description DIV
 
-        // append to description DIV
-        descriptionDiv.appendChild(textDiv);
+    descriptionDiv.appendChild(projectLink);
 
-        const projectLink = document.createElement('a');
-        projectLink.classList.add('project-link');
-        projectLink.innerHTML = `${this.name} <i class="fas fa-paperclip"></i>`;
-        projectLink.href = `${this.link}`;
-        projectLink.target = '_balnk';
+    // append to the parent DIV
+    parentDiv.appendChild(descriptionDiv);
 
-        // append to the to description DIV
-
-        descriptionDiv.appendChild(projectLink);
-
-         
-        // append to the parent DIV
-        parentDiv.appendChild(descriptionDiv);
-
-        return parentDiv ;         
-
-    }
-
-
+    return parentDiv;
+  }
 }
-

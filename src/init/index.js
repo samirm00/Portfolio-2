@@ -1,3 +1,3 @@
-'use strict';
+"use strict";
 
-import '../listeners/projectListener.js'
+import "../listeners/projectListener.js";
